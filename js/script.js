@@ -5,6 +5,5 @@ analytics.track('digitalDataSegPage', digitalData);
 document.onclick = eventRef
 function eventRef() {
   analytics.track('digitalDataSegClick', digitalData);
-  alert("Click happened");
 }
 }}();
