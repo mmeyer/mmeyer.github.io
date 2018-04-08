@@ -2,4 +2,8 @@
 analytics.load("wFdvgJnMERiQbADJbrFxvxvpg8AtwsNb");
 analytics.page();
 analytics.track('digitalDataSeg', digitalData);
+document.onclick = eventRef
+function eventRef(evt) {
+  analytics.track('digitalDataSegClick', digitalData);
+}
 }}();
