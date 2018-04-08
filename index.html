@@ -7,15 +7,60 @@
   analytics.page();
   }}();
 </script>
+
+<script>
+
+var digitalData = window.digitalData = {
+  "pageInfo": {
+	"siteSectionsLevel1": "cars",
+	"siteSectionsLevel2": "grandland-x",
+	"siteSectionsLevel3": "technical-specifications",
+	"siteSectionsLevel4": "engines---transmissions",
+	"siteSectionsLevel5": "cars:grandland-x:technical-specifications:engines---transmissions",
+	"pageName": "opel:DE:DE:de:t1:cars:grandland-x:technical-specifications:engines---transmissions",
+	"url": "http://www.opel.de/fahrzeuge/grandland-x/spezifikationen/motoren-getriebe.html",
+	"seoStrategyPageName": "Opel Grandland X | Motoren & Getriebe | Opel Deutschland",
+	"pageType": "",
+	"pageSubType": "",
+	"pageMarketing": "",
+	"pageMarketingSubType": "",
+	"languageSelected": "DE",
+	"brand": "opel",
+	"country": "Germany",
+	"siteName": "quantum_Germany",
+	"region": "Europe",
+	"viewport": "1423x339",
+	"orientation": "landscape",
+	"renderedExperience": "large"
+  },
+  "internalCampaignInfo": {},
+  "articleInfo": {},
+  "visitorProfile": {},
+  "vehicleInfo": {
+	"familyOfVehicles": "",
+	"vehicleType": "",
+	"modelName": "opel grandland x",
+	"modelYear": "2018",
+	"bodyStyle": "Grandland X",
+	"trimLevel": "Ultimate:Business INNOVATION:INNOVATION:COLOR LINE:BUSINESS EDITION:EDITION:SELECTION",
+	"vin": ""
+  },
+  "toolsInfo": {
+	"formSteps": "",
+	"dealerName": "",
+	"dealerId": "",
+	"dealerZipCode": "",
+	"formErrors": ""
+  }
+}
+
+</script>
 </head>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 <script>
-analytics.track('Clicked CTA', {
-  location: 'header',
-  type: 'button'
-});
+analytics.track('digitalData', digitalData);
 </script>
 </body>
 </html>
