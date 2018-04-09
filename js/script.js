@@ -4,10 +4,12 @@ analytics.page();
 analytics.track('digitalDataSegPage', digitalData);
 
 var links = document.getElementsByTagName('a');
+
+analytics.trackLink(links, 'digitalDataSegClick', digitalData);
+
 for (i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() {
   console.log(digitalData);
-	analytics.track('digitalDataSegClick', digitalData);
   console.log("Link clicked.");
   });
 };
