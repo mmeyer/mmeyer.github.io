@@ -14,4 +14,13 @@ for (i = 0; i < links.length; i++) {
   });
 };
 
+var traits = {
+favoriteColor: 'blue',
+gender: 'female',
+style: 'modern'
+};
+
+analytics.identify(traits);
+
+
 }}();
