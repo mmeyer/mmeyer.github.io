@@ -2,8 +2,12 @@
 analytics.load("wFdvgJnMERiQbADJbrFxvxvpg8AtwsNb");
 analytics.page();
 analytics.track('digitalDataSegPage', digitalData);
-document.onclick = eventRef
-function eventRef() {
-  analytics.track('digitalDataSegClick', digitalData);
-}
+
+var links = document.getElementsByTagName('a');
+for (i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function() {
+	analytics.track('digitalDataSegClick', digitalData);
+  });
+};
+
 }}();
